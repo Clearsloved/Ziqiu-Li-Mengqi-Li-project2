@@ -1,0 +1,8 @@
+/* Hard Game Page Styles - 9×9 Sudoku Grid Specific Styles */
+@import url('../../css/variables.css');
+
+/* Sudoku Grid - 9×9 Specific */
+.sudoku-grid {
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+}

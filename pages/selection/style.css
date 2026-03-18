@@ -1,0 +1,125 @@
+/* Selection Page Styles - Game Selection Cards */
+@import url('../../css/variables.css');
+
+/* Selection Container */
+.selection-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--spacing-lg);
+    padding-top: 80px;
+}
+
+/* Page Title */
+.page-title {
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+    color: var(--primary-color);
+}
+
+.page-title h1 {
+    font-size: var(--font-size-xxlarge);
+    margin-bottom: var(--spacing-sm);
+}
+
+.page-title p {
+    color: var(--text-color);
+    font-size: var(--font-size-base);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Games Grid */
+.games-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-xl);
+    margin-bottom: var(--spacing-xl);
+}
+
+/* Game Card */
+.game-card {
+    background-color: white;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-md);
+    padding: var(--spacing-xl);
+    text-align: center;
+    transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.game-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    background-color: var(--accent-color);
+}
+
+.game-card:hover .game-info h3,
+.game-card:hover .game-info p,
+.game-card:hover .author-info {
+    color: var(--light-text);
+}
+
+/* Game Icon */
+.game-icon {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto var(--spacing-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.game-icon img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+/* Game Info */
+.game-info h3 {
+    color: var(--primary-color);
+    font-size: var(--font-size-xlarge);
+    margin-bottom: var(--spacing-sm);
+}
+
+.game-info p {
+    color: var(--text-color);
+    font-size: var(--font-size-base);
+    margin-bottom: var(--spacing-md);
+}
+
+/* Author Info */
+.author-info {
+    color: var(--text-color-light);
+    font-size: var(--font-size-small);
+    font-style: italic;
+}
+
+
+@media (max-width: 768px) {
+    .selection-container {
+        padding: var(--spacing-md);
+        padding-top: 70px;
+    }
+
+    .games-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+
+    .game-card {
+        padding: var(--spacing-lg);
+    }
+
+    .game-icon {
+        width: 80px;
+        height: 80px;
+    }
+
+    .game-info h3 {
+        font-size: var(--font-size-large);
+    }
+}

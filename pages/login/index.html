@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku Master - Login</title>
+    <link rel="stylesheet" href="../../common/variables.css">
+    <link rel="stylesheet" href="../../common/common.css">
+    <link rel="stylesheet" href="../../common/navbar.css">
+    <link rel="stylesheet" href="../../common/form.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="../../">Sudoku Master</a>
+            </div>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox">
+            <label for="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+                <img src="../../assets/icons/More.png" alt="Menu" class="nav-toggle-icon">
+            </label>
+            <ul class="nav-links">
+                <li><a href="../../"><img src="../../assets/icons/home.png" alt="Home" class="nav-icon">
+                        Home</a></li>
+                <li><a href="../selection/"><img src="../../assets/icons/Games.png" alt="Games" class="nav-icon">
+                        Games</a></li>
+                <li><a href="../hard-game/"><img src="../../assets/icons/Hard-game.png" alt="Hard Game"
+                            class="nav-icon"> Hard Game</a></li>
+                <li><a href="../easy-game/"><img src="../../assets/icons/Easy-game.png" alt="Easy Game"
+                            class="nav-icon"> Easy Game</a></li>
+                <li><a href="../rules/"><img src="../../assets/icons/Rules.png" alt="Rules" class="nav-icon"> Rules</a>
+                </li>
+                <li><a href="../high-scores/"><img src="../../assets/icons/High-Scores.png" alt="High Scores"
+                            class="nav-icon"> High Scores</a></li>
+                <li><a href="./" class="active"><img src="../../assets/icons/Log-in.png" alt="Login" class="nav-icon">
+                        Login</a></li>
+                <li><a href="../register/"><img src="../../assets/icons/Register.png" alt="Register" class="nav-icon">
+                        Register</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <div class="form-container">
+            <!-- Page Title -->
+            <div class="page-title">
+                <h1>Login to Sudoku Master</h1>
+                <p>Enter your credentials to access your account and track your progress.</p>
+            </div>
+
+            <!-- Login Form -->
+            <div class="form-content">
+                <h2>Account Login</h2>
+
+                <form action="#" method="post">
+                    <!-- Username Field -->
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" name="username" placeholder="Enter your username" required>
+                    </div>
+
+                    <!-- Password Field -->
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="submit-btn" disabled>Login</button>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

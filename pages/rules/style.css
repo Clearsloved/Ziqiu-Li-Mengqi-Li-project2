@@ -1,0 +1,148 @@
+/* Rules Page Styles - Based on Home Page Sudoku History */
+@import url('../../css/variables.css');
+
+/* Rules Container */
+.rules-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--spacing-lg);
+    padding-top: 80px;
+}
+
+/* Page Title */
+.page-title {
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+    color: var(--primary-color);
+}
+
+.page-title h1 {
+    font-size: var(--font-size-xxlarge);
+    margin-bottom: var(--spacing-sm);
+}
+
+.page-title p {
+    color: var(--text-color);
+    font-size: var(--font-size-base);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Rules Content - Based on Sudoku History */
+.rules-content {
+    background-color: white;
+    border: 1px solid var(--border-color);
+    padding: var(--spacing-xl);
+    margin-bottom: var(--spacing-xl);
+    border-radius: var(--border-radius-md);
+}
+
+.rules-content h2 {
+    text-align: center;
+    margin-bottom: var(--spacing-lg);
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: var(--spacing-sm);
+}
+
+/* Rules List */
+.rules-list {
+    margin-bottom: var(--spacing-xl);
+}
+
+.rules-list h3 {
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-md);
+    font-size: var(--font-size-large);
+}
+
+.rules-list ul {
+    margin-left: var(--spacing-xl);
+    margin-bottom: var(--spacing-lg);
+}
+
+.rules-list li {
+    margin-bottom: var(--spacing-sm);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.rules-list li strong {
+    color: var(--primary-color);
+}
+
+/* Credits Section - Same as Home Page CTA */
+.credits {
+    text-align: center;
+    padding: var(--spacing-lg);
+    background-color: var(--primary-color);
+    color: var(--light-text);
+    margin-bottom: var(--spacing-xl);
+}
+
+.credits h2 {
+    color: var(--light-text);
+    margin-bottom: var(--spacing-md);
+}
+
+.credits p {
+    max-width: 600px;
+    margin: 0 auto var(--spacing-lg);
+    font-size: var(--font-size-base);
+}
+
+/* Contact Links - Same as CTA Buttons */
+.contact-links {
+    display: flex;
+    gap: var(--spacing-md);
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact-link {
+    background-color: var(--light-text);
+    color: var(--primary-color);
+    font-size: var(--font-size-base);
+    padding: var(--spacing-sm) var(--spacing-lg);
+    border: none;
+    border-radius: var(--border-radius-md);
+    text-decoration: none;
+    transition: all var(--transition-normal);
+    display: inline-block;
+    text-align: center;
+}
+
+.contact-link:hover {
+    background-color: var(--accent-color);
+    color: var(--light-text);
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .rules-container {
+        padding: var(--spacing-md);
+        padding-top: 70px;
+    }
+
+    .rules-content {
+        padding: var(--spacing-lg);
+    }
+
+    .rules-list ul {
+        margin-left: var(--spacing-lg);
+    }
+
+    .contact-links {
+        flex-direction: column;
+        align-items: center;
+        gap: var(--spacing-md);
+    }
+
+    .contact-link {
+        width: 100%;
+        max-width: 250px;
+        justify-content: center;
+    }
+}

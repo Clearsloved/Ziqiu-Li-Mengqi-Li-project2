@@ -1,0 +1,160 @@
+/* Shared Game Styles for Sudoku Game Pages */
+@import url('variables.css');
+
+/* Game Container */
+.game-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: var(--spacing-lg);
+    padding-top: 80px;
+}
+
+/* Page Title */
+.page-title {
+    text-align: center;
+    margin-bottom: var(--spacing-md);
+    color: var(--primary-color);
+}
+
+.page-title h1 {
+    font-size: var(--font-size-xlarge);
+    margin-bottom: var(--spacing-sm);
+}
+
+.page-title p {
+    color: var(--text-color);
+    font-size: var(--font-size-base);
+}
+
+/* Timer */
+.timer {
+    text-align: center;
+    margin-bottom: var(--spacing-lg);
+    font-size: var(--font-size-large);
+    color: var(--primary-color);
+    font-family: monospace;
+}
+
+/* Sudoku Grid */
+.sudoku-grid {
+    display: grid;
+    gap: 0;
+    border: 2px solid var(--subgrid-border);
+    margin-bottom: var(--spacing-lg);
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Sudoku Cell */
+.sudoku-cell {
+    aspect-ratio: 1;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--cell-border);
+}
+
+/* Cell input (non-interactive) - Base Styles */
+.cell-input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    text-align: center;
+    font-size: var(--font-size-large);
+    font-weight: normal;
+    color: var(--primary-color);
+    background-color: transparent;
+    cursor: default;
+}
+
+/* Pre-filled cells for easy game */
+.cell-input.given {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+/* Empty cells - for easy game */
+.cell-input.empty {
+    color: var(--text-color);
+}
+
+/* Click effect - light yellow background */
+.cell-input:focus {
+    background-color: #fff9c4;
+    outline: none;
+}
+
+/* Game Controls */
+.game-controls {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+    flex-wrap: wrap;
+}
+
+.control-btn {
+    background-color: var(--secondary-color);
+    color: var(--light-text);
+    border: none;
+    padding: var(--spacing-sm) var(--spacing-md);
+    font-size: var(--font-size-base);
+    cursor: default;
+    min-width: 100px;
+}
+
+/* Number Pad */
+.number-pad {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-lg);
+    flex-wrap: wrap;
+}
+
+.number-btn {
+    background-color: var(--background-color);
+    border: 1px solid var(--border-color);
+    padding: var(--spacing-sm) var(--spacing-md);
+    font-size: var(--font-size-base);
+    color: var(--primary-color);
+    cursor: default;
+    min-width: 40px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .game-container {
+        padding: var(--spacing-md);
+        padding-top: 70px;
+    }
+
+    .sudoku-grid {
+        max-width: 100%;
+    }
+
+    .cell-input {
+        font-size: var(--font-size-base);
+    }
+
+    .game-controls {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .control-btn {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .number-pad {
+        gap: var(--spacing-xs);
+    }
+
+    .number-btn {
+        min-width: 35px;
+        padding: var(--spacing-xs) var(--spacing-sm);
+    }
+}

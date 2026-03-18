@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku Master - Home</title>
+    <link rel="stylesheet" href="common/variables.css">
+    <link rel="stylesheet" href="common/common.css">
+    <link rel="stylesheet" href="common/navbar.css">
+    <link rel="stylesheet" href="common/home.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="./">Sudoku Master</a>
+            </div>
+            <!-- Mobile navigation toggle (checkbox hack) -->
+            <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox">
+            <label for="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+                <img src="assets/icons/More.png" alt="Menu" class="nav-toggle-icon">
+            </label>
+            <ul class="nav-links">
+                <li><a href="./" class="active"><img src="assets/icons/home.png" alt="Home" class="nav-icon">
+                        Home</a></li>
+                <li><a href="pages/selection/"><img src="assets/icons/Games.png" alt="Games" class="nav-icon">
+                        Games</a>
+                </li>
+                <li><a href="pages/hard-game/"><img src="assets/icons/Hard-game.png" alt="Hard Game" class="nav-icon">
+                        Hard Game</a></li>
+                <li><a href="pages/easy-game/"><img src="assets/icons/Easy-game.png" alt="Easy Game" class="nav-icon">
+                        Easy Game</a></li>
+                <li><a href="pages/rules/"><img src="assets/icons/Rules.png" alt="Rules" class="nav-icon">
+                        Rules</a>
+                </li>
+                <li><a href="pages/high-scores/"><img src="assets/icons/High-Scores.png" alt="High Scores"
+                            class="nav-icon"> High Scores</a></li>
+                <li><a href="pages/login/"><img src="assets/icons/Log-in.png" alt="Login" class="nav-icon">
+                        Login</a>
+                </li>
+                <li><a href="pages/register/"><img src="assets/icons/Register.png" alt="Register" class="nav-icon">
+                        Register</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Welcome Section -->
+        <section class="welcome">
+            <h1>Welcome to Sudoku Master</h1>
+            <p>Challenge your mind with the world's most popular puzzle game. Test your logic, improve your skills, and
+                climb the leaderboards!</p>
+            <a href="pages/selection/" class="btn">Start Playing Now</a>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <img src="assets/icons/Brain-Training.png" alt="Brain Training" style="width: 48px; height: 48px;">
+                </div>
+                <h3>Brain Training</h3>
+                <p>Improve your logical thinking and problem-solving skills with daily Sudoku challenges.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <img src="assets/icons/Track-Progress.png" alt="Track Progress" style="width: 48px; height: 48px;">
+                </div>
+                <h3>Track Progress</h3>
+                <p>Monitor your improvement with detailed statistics and personal best records.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <img src="assets/icons/Compete-Globally.png" alt="Compete Globally"
+                        style="width: 48px; height: 48px;">
+                </div>
+                <h3>Compete Globally</h3>
+                <p>Challenge players from around the world and climb the global leaderboards.</p>
+            </div>
+        </section>
+
+        <!-- Sudoku History -->
+        <section class="sudoku-history">
+            <h2>
+                <img src="assets/icons/history.png" alt="History"
+                    style="width: 24px; height: 24px; vertical-align: middle;">
+                About Sudoku
+                <img src="assets/icons/history.png" alt="History"
+                    style="width: 24px; height: 24px; vertical-align: middle;">
+            </h2>
+            <p>Sudoku is a logic-based number puzzle that originated in Switzerland and gained popularity in Japan
+                before spreading worldwide.</p>
+            <p>The name "Sudoku" means "single number" in Japanese. The puzzle consists of a 9×9 grid divided into nine
+                3×3 subgrids.</p>
+            <p>To solve a Sudoku puzzle, each row, column, and subgrid must contain all digits from 1 to 9 without
+                repetition.</p>
+            <p>Sudoku puzzles are classified by difficulty levels, with "Easy" and "Hard" being the most common
+                categories.</p>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta">
+            <h2>Ready to Play?</h2>
+            <p>Join thousands of players who are already enjoying Sudoku Master. Whether you're a beginner or an expert,
+                we have puzzles for every skill level.</p>
+            <div class="cta-buttons">
+                <a href="pages/selection/" class="btn">Browse Games</a>
+                <a href="pages/register/" class="btn">Create Account</a>
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>

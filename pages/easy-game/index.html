@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku Master - Easy Game</title>
+    <link rel="stylesheet" href="../../common/variables.css">
+    <link rel="stylesheet" href="../../common/common.css">
+    <link rel="stylesheet" href="../../common/navbar.css">
+    <link rel="stylesheet" href="../../common/game.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="../../">Sudoku Master</a>
+            </div>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox">
+            <label for="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+                <img src="../../assets/icons/More.png" alt="Menu" class="nav-toggle-icon">
+            </label>
+            <ul class="nav-links">
+                <li><a href="../../"><img src="../../assets/icons/home.png" alt="Home" class="nav-icon">
+                        Home</a></li>
+                <li><a href="../selection/"><img src="../../assets/icons/Games.png" alt="Games" class="nav-icon">
+                        Games</a></li>
+                <li><a href="../hard-game/"><img src="../../assets/icons/Hard-game.png" alt="Hard Game"
+                            class="nav-icon"> Hard Game</a></li>
+                <li><a href="./" class="active"><img src="../../assets/icons/Easy-game.png" alt="Easy Game"
+                            class="nav-icon"> Easy Game</a></li>
+                <li><a href="../rules/"><img src="../../assets/icons/Rules.png" alt="Rules" class="nav-icon"> Rules</a>
+                </li>
+                <li><a href="../high-scores/"><img src="../../assets/icons/High-Scores.png" alt="High Scores"
+                            class="nav-icon"> High Scores</a></li>
+                <li><a href="../login/"><img src="../../assets/icons/Log-in.png" alt="Login" class="nav-icon"> Login</a>
+                </li>
+                <li><a href="../register/"><img src="../../assets/icons/Register.png" alt="Register" class="nav-icon">
+                        Register</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <div class="game-container">
+            <!-- Page Title -->
+            <div class="page-title">
+                <h1>Easy Sudoku Game</h1>
+                <p>6×6 grid with pre-filled numbers</p>
+            </div>
+
+            <!-- Timer -->
+            <div class="timer">Time: 15:45</div>
+
+            <!-- Sudoku Grid - 6×6 -->
+            <div class="sudoku-grid">
+                <div class="sudoku-cell"><input type="text" class="cell-input" value="1" disabled></div>
+                <div class="sudoku-cell"><input type="text" class="cell-input" value="2" disabled></div>
+                <div class="sudoku-cell"><input type="text" class="cell-input" value=""></div>
+                <div class="sudoku-cell"><input type="text" class="cell-input" value="4" disabled></div>
+                <div class="sudoku-cell"><input type="text" class="cell-input" value=""></div>
+                <div class="sudoku-cell"><input type="text" class="cell-input" value="6" disabled></div>
+
+                <div class="sudoku-cell"><input type="text" class="cell-input" value="4" disabled></div>
+                <div class="sudoku-cell"><input type="text" class="cell-input" value=""></div>
+                <div class="sudoku-cell"><input type="text" class="cell-input" value="6" disabled></div>
+                <div class="sudoku-cell"><input type="text" class="cell-input" value=""></div>
+                <div class="sudoku-cell"><input type="text" class="cell-input" value="2" disabled></div>
+                <div class="sudoku-cell"><input type="text" class="cell-input" value=""></div>
+
+                <div class="sudoku-cell"><input type="text" class="cell-input" value="2" disabled></div>
+                <div class="sudoku-cell"><input type="text" class="cell-input" value=""></div>
+                <div class="sudoku-cell"><input type="text" class="cell-input" value="1" disabled></div>
+                <div class="sudoku-cell"><input type="text" class="cell-input" value="5" disabled></div>
+                <div class="sudoku-cell"><input type="text" class="cell-input" value=""></div>
+                <div class="sudoku-cell"><input type="text" class="cell-input" value="4" disabled></div>
+
+                <div class="sudoku-cell"><input type="text" class="cell-input" value="5" disabled></div>
+                <div class="sudoku-cell"><input type="text" class="cell-input" value=""></div>
+                <div class="sudoku-cell"><input type="text" class="cell-input" value="4" disabled></div>
+                <div class="sudoku-cell"><input type="text" class="cell-input" value="2" disabled></div>
+                <div class="sudoku-cell"><input type="text" class="cell-input" value=""></div>
+                <div class="sudoku-cell"><input type="text" class="cell-input" value="1" disabled></div>
+
+                <div class="sudoku-cell"><input type="text" class="cell-input" value=""></div>
+                <div class="sudoku-cell"><input type="text" class="cell-input" value="1" disabled></div>
+                <div class="sudoku-cell"><input type="text" class="cell-input" value=""></div>
+                <div class="sudoku-cell"><input type="text" class="cell-input" value=""></div>
+                <div class="sudoku-cell"><input type="text" class="cell-input" value="4" disabled></div>
+                <div class="sudoku-cell"><input type="text" class="cell-input" value="5" disabled></div>
+
+                <div class="sudoku-cell"><input type="text" class="cell-input" value="6" disabled></div>
+                <div class="sudoku-cell"><input type="text" class="cell-input" value=""></div>
+                <div class="sudoku-cell"><input type="text" class="cell-input" value="5" disabled></div>
+                <div class="sudoku-cell"><input type="text" class="cell-input" value="3" disabled></div>
+                <div class="sudoku-cell"><input type="text" class="cell-input" value=""></div>
+                <div class="sudoku-cell"><input type="text" class="cell-input" value=""></div>
+            </div>
+
+            <!-- Game Controls -->
+            <div class="game-controls">
+                <button class="control-btn">Check</button>
+                <button class="control-btn">Pause</button>
+                <button class="control-btn">Clear</button>
+            </div>
+
+            <!-- Number Pad -->
+            <div class="number-pad">
+                <button class="number-btn">1</button>
+                <button class="number-btn">2</button>
+                <button class="number-btn">3</button>
+                <button class="number-btn">4</button>
+                <button class="number-btn">5</button>
+                <button class="number-btn">6</button>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
