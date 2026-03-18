@@ -1,2 +1,3 @@
 # Ziqiu-Li-Mengqi-Li-project2
-2026 Spring NEU CS5610 Project 2 
+### NEU CS5610 2026 SPRING PROJECT 2
+#### Collaborator: Ziqiu Li And Mengqi Li
