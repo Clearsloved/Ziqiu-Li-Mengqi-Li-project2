@@ -1,0 +1,25 @@
+.sudoku-grid.difficulty-normal {
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+}
+
+.sudoku-grid.difficulty-easy {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+}
+
+.cell-input:not([disabled]):hover {
+    background-color: #e3f2fd;
+    cursor: pointer;
+}
+
+.cell-input.selected {
+    background-color: #bbdefb;
+    border: 2px solid #2196f3;
+}
+
+.cell-input.incorrect {
+    background-color: #ffcdd2;
+    border: 2px solid #f44336;
+    color: #d32f2f;
+}

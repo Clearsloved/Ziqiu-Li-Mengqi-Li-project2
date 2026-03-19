@@ -1,8 +1,0 @@
-/* Easy Game Page Styles - 6×6 Sudoku Grid Specific Styles */
-@import url('../../css/variables.css');
-
-/* Sudoku Grid - 6×6 Specific */
-.sudoku-grid {
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-}
