@@ -2,10 +2,10 @@ import { useContext, useEffect, useState } from 'react';
 import { GameContext } from '../context/GameContext';
 import SudokuBoard from '../components/SudokuBoard';
 import './GameMode.css';
-
+import Timer from '../components/Timer';
 export default function GameMode({ mode }) {
   const { newGame, resetGame, difficulty, isSolved, selectedCell, handleCellInput, board } = useContext(GameContext);
-
+const [resetTrigger, setResetTrigger] = useState(0);
   useEffect(() => {
     /*
     Add another conidtion: || board.length === 0 to fix a WEIRD BUG:
@@ -25,6 +25,7 @@ export default function GameMode({ mode }) {
     */
     if (difficulty !== mode || board.length === 0) {
       newGame(mode);
+      setResetTrigger(prev => prev + 1);
     }
   }, [mode, difficulty, board.length, newGame]);
 
@@ -36,10 +37,12 @@ export default function GameMode({ mode }) {
 
   const onReset = () => {
     resetGame();
+    setResetTrigger(prev => prev + 1);
   };
 
   const onNewGame = () => {
     newGame(mode);
+    setResetTrigger(prev => prev + 1);
   };
 
   return (
@@ -56,7 +59,7 @@ export default function GameMode({ mode }) {
           </div>
         )}
 
-        <div className="timer">Time: 00:00</div>
+        <Timer isPlaying={!isSolved} resetTrigger={resetTrigger} />
 
         <SudokuBoard />
 
