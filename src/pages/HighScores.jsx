@@ -1,4 +1,3 @@
-import React from 'react';
 import './HighScores.css';
 
 function HighScores() {
